@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainTabBarController" customModule="fireChat" customModuleProvider="target">
+            <connections>
+                <outlet property="container" destination="k8L-yu-Sk4" id="EZC-IR-j0E"/>
+                <outlet property="myTabBar" destination="X9j-az-oMV" id="iiq-cW-iDQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X9j-az-oMV">
+                    <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <items>
+                        <tabBarItem title="sb" id="Eob-t5-g3T"/>
+                        <tabBarItem tag="1" title="" id="evr-3s-4i2"/>
+                    </items>
+                </tabBar>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k8L-yu-Sk4">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="X9j-az-oMV" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="BOR-nN-0MJ"/>
+                <constraint firstItem="X9j-az-oMV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="DTN-5e-VGb"/>
+                <constraint firstItem="k8L-yu-Sk4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="HEu-3t-uWv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="X9j-az-oMV" secondAttribute="bottom" id="Vjl-DK-kwo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="k8L-yu-Sk4" secondAttribute="trailing" id="lJ2-tn-rTf"/>
+                <constraint firstItem="X9j-az-oMV" firstAttribute="top" secondItem="k8L-yu-Sk4" secondAttribute="bottom" symbolic="YES" id="mbZ-Z3-5zv"/>
+                <constraint firstItem="k8L-yu-Sk4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="yks-jR-SVW"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="91"/>
+        </view>
+    </objects>
+</document>
